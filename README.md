@@ -10,11 +10,11 @@ This project is a functional prototype of an **AI Marketing Agent**, designed to
 
 ### 1. 🗣️ Conversational Analytics (Text-to-SQL)
 * **Natural Language Querying:** Transforms questions like *"What is the ROAS for Meta?"* or *"Which campaign spent the most?"* into structured SQL queries automatically.
-* **Hybrid Logic Engine:** Uses a robust fall-back architecture. It attempts to use **Google Gemini (LLM)** for complex reasoning but falls back to a deterministic logic engine if the API is unreachable—ensuring a **zero-crash demo** environment.
+* **Hybrid Logic Engine:** Uses a robust fall-back architecture. It attempts to use **Google Gemini (LLM)** for complex reasoning but falls back to a deterministic logic engine if the API is unreachable ensuring a **zero-crash demo** environment.
 
 ### 2. 👁️ Vision AI Analysis
 * **Creative Intelligence:** Demonstrates advanced multi-modal capabilities.
-* **Image-to-Insight:** Users can upload ad creatives (via the UI paperclip), and the agent analyzes visual tags (e.g., "Smiling Face", "Outdoors") to predict CTR performance based on historical trends.
+* **Image-to-Insight:** Users can upload ad creatives via the UI paperclip, and the agent analyzes visual tags to predict CTR performance based on historical trends.
 
 ### 3. 📊 Dynamic Visualization
 * **Context-Aware Charts:** The UI automatically detects numerical datasets and renders interactive **Bar Charts** inside the chat stream.
@@ -109,16 +109,16 @@ ad-insight-agent/
 **Scenario 3: Vision AI (The "Wow" Factor)**
 > **Action:** Click the **Paperclip Icon** 📎 in the input bar.
 >
-> **Agent:** Simulates scanning an uploaded creative, identifies visual elements (e.g., "Human Face"), and provides a predictive performance score based on historical data.
+> **Agent:** Simulates scanning an uploaded creative, identifies visual elements, and provides a predictive performance score based on historical data.
 
 ---
 
 ## 🧠 Design Decisions & Trade-offs
 
 * **Why Express instead of Next.js API Routes?**
-    While Next.js handles API routes well, decoupling the backend into a separate Express service allows for heavier computation (like image processing or long-running Python scripts) without bogging down the frontend rendering server. It aligns with microservices architecture.
+    While Next.js handles API routes well, decoupling the backend into a separate Express service allows for heavier computation like image processing or long-running Python scripts without bogging down the frontend rendering server. It aligns with microservices architecture.
 * **Why Hybrid AI?**
-    For a production demo, reliability is paramount. The system is designed to *try* the LLM first, but if the API fails or hallucinates invalid SQL, it falls back to a deterministic logic engine. This ensures the user (or interviewer) never sees an error page.
+    For a production demo, reliability is paramount. The system is designed to *try* the LLM first, but if the API fails or hallucinates invalid SQL, it falls back to a deterministic logic engine.
 
 ---
 

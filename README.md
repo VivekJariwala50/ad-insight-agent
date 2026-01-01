@@ -125,6 +125,6 @@ ad-insight-agent/
 ## 👨‍💻 Author
 
 **Vivek Tejasbhai Jariwala**
-*Full Stack Engineer | Frontend Specialist*
+*May 2026 Grad | Full Stack Engineer | Software Engineer*
 
 Built as a proof-of-concept for **Conversational Marketing Analytics**.

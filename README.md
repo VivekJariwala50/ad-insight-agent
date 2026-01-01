@@ -55,6 +55,7 @@ ad-insight-agent/
 │
 ├── package.json        
 └── README.md
+```
 
 ## ⚡ Getting Started
 
